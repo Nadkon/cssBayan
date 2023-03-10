@@ -1,0 +1,31 @@
+.bayan {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgb(248, 241, 232);
+  padding-left: 50px;
+}
+
+.bayan-title {
+  font-weight: bold;
+  font-size: 30px;
+  color: blue;
+}
+
+.bayan-text {
+  font-size: 30px;
+  color: rgb(103, 206, 25);
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+p {
+  font-weight: bold;
+  position: absolute;
+  left: 10%;
+}
+
+img {
+  display: block;
+  width: 90%;
+}
