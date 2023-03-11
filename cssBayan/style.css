@@ -20,7 +20,7 @@ body {
 }
 
 .bayan-item {
-  border-top: 5px solid lightgray;
+  border-top: 3px solid lightgray;
 }
 
 .bayan-title {
@@ -91,4 +91,32 @@ img {
   max-height: 60vh;
   display: block;
   width: 90%;
+}
+
+@media screen and (max-width: 700px) {
+  .bayan-title {
+    font-size: 25px;
+  }
+
+  .bayan-text {
+    font-size: 20px;
+  }
+
+  p {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .bayan-title {
+    font-size: 20px;
+  }
+
+  .bayan-text {
+    font-size: 16px;
+  }
+
+  p {
+    width: 80%;
+  }
 }
