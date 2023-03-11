@@ -62,7 +62,6 @@ body {
   height: 0;
   -webkit-appearance: none;
   appearance: none;
-  position: absolute;
 }
 
 .bayan-text {
@@ -78,7 +77,6 @@ body {
   padding: 0.6rem 0.9rem;
   font-size: 1.8rem;
   color: rgb(103, 206, 25);
-  position: relative;
   max-width: 40%;
   margin: 0 auto;
 }
@@ -95,8 +93,7 @@ body {
 
 p {
   font-weight: bold;
-  position: absolute;
-  /* left: 10%; */
+  transform: translate(0.75rem, 4rem);
 }
 
 img {
@@ -124,6 +121,10 @@ img {
     font-size: 1.3rem;
   }
 
+  p {
+    transform: translate(0.75rem, 3rem);
+  }
+
 }
 
 @media screen and (max-width: 820px) {
@@ -139,6 +140,10 @@ img {
 @media screen and (max-width: 700px) {
   .bayan-title {
     font-size: 1.5rem;
+  }
+
+  p {
+    transform: translate(0.75rem, 3.1rem);
   }
 
   .bayan-text {
