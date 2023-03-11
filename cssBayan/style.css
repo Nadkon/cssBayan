@@ -23,6 +23,10 @@ body {
   border-top: 3px solid lightgray;
 }
 
+.bayan-item:hover~img {
+  border: 5px solid red;
+}
+
 .bayan-title {
   display: block;
   font-weight: bold;
@@ -43,11 +47,11 @@ body {
 }
 
 .bayan:hover .bayan-input:checked~.bayan-title:after {
-  content: "x";
+  content: "\58";
 }
 
 .bayan:hover .bayan-title:after {
-  content: '+';
+  content: '\2b';
   display: block;
   color: black;
   font-weight: bold;
@@ -89,7 +93,7 @@ p {
 
 img {
   max-height: 60vh;
-  display: block;
+  /* display: block; */
   width: 90%;
 }
 
