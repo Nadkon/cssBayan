@@ -21,10 +21,7 @@ body {
 
 .bayan-item {
   border-top: 3px solid lightgray;
-}
-
-.bayan-item:hover~img {
-  border: 5px solid red;
+  transition: all .5s ease-in-out;
 }
 
 .bayan-title {
@@ -35,7 +32,6 @@ body {
   position: relative;
   color: blue;
   cursor: pointer;
-  transition: all .2s ease-out;
 }
 
 .bayan:hover .bayan-title {
@@ -69,14 +65,16 @@ body {
   position: absolute;
 }
 
-
-.bayan-input:hover~.bayan-text,
-.bayan-input:checked~.bayan-text {
-  display: block;
-}
-
 .bayan-text {
-  display: none;
+  /* display: none;
+  transition: opacity 0.5s ease-out;
+  opacity: 0; */
+  transition: all 2s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+
+
   padding: 10px 15px;
   font-size: 30px;
   color: rgb(103, 206, 25);
@@ -84,6 +82,16 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+
+.bayan-item:hover .bayan-text,
+.bayan-input:checked~.bayan-text {
+  /* display: block;
+  opacity: 1; */
+
+  opacity: 1;
+  height: auto;
+}
+
 
 p {
   font-weight: bold;
@@ -96,15 +104,17 @@ img {
   /* display: block; */
   width: 90%;
 }
-@media screen and (max-width: 820px){
-  .bayan-title {
-      font-size: 27px;
-    }
 
-    .bayan-text {
-      font-size: 25px;
-    }
+@media screen and (max-width: 820px) {
+  .bayan-title {
+    font-size: 27px;
+  }
+
+  .bayan-text {
+    font-size: 25px;
+  }
 }
+
 @media screen and (max-width: 700px) {
   .bayan-title {
     font-size: 25px;
