@@ -28,6 +28,7 @@ body {
   font-weight: bold;
   font-size: 30px;
   padding: 10px 15px;
+  position: relative;
   color: blue;
   cursor: pointer;
   transition: all .2s ease-out;
@@ -35,6 +36,25 @@ body {
 
 .bayan:hover .bayan-title {
   color: black;
+}
+
+.bayan-input:checked+.bayan-title {
+  color: black;
+}
+
+.bayan:hover .bayan-input:checked~.bayan-title:after {
+  content: "x";
+}
+
+.bayan:hover .bayan-title:after {
+  content: '+';
+  display: block;
+  color: black;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
 }
 
 .bayan-input {
@@ -45,9 +65,6 @@ body {
   position: absolute;
 }
 
-.bayan-input:checked+.bayan-title {
-  color: black;
-}
 
 .bayan-input:hover~.bayan-text,
 .bayan-input:checked~.bayan-text {
