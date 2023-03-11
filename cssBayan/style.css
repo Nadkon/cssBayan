@@ -45,9 +45,13 @@ body {
   position: absolute;
 }
 
-.bayan-input:hover+.bayan-text,
-.bayan-input:checked+.bayan-text {
-  /* display: block; */
+.bayan-input:checked+.bayan-title {
+  color: black;
+}
+
+.bayan-input:hover~.bayan-text,
+.bayan-input:checked~.bayan-text {
+  display: block;
 }
 
 .bayan-text {
