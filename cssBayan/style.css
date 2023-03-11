@@ -1,0 +1,168 @@
+body {
+  background-color: rgb(248, 241, 232);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.body {
+  max-width: 80%;
+  margin: 1rem auto;
+
+}
+
+.bayan {
+  padding-top: 1rem;
+  cursor: pointer;
+}
+
+.bayan-item {
+  border-top: 0, 2rem solid lightgray;
+  transition: all .5s ease-in-out;
+}
+
+.bayan-title {
+  display: block;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0.6rem 0.9rem;
+  position: relative;
+  color: blue;
+  cursor: pointer;
+}
+
+.bayan:hover .bayan-title {
+  color: black;
+}
+
+.bayan-input:checked+.bayan-title {
+  color: black;
+}
+
+.bayan:hover .bayan-input:checked~.bayan-title:after {
+  content: "\58";
+}
+
+.bayan:hover .bayan-title:after {
+  content: '\2b';
+  display: block;
+  color: black;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  right: 0.9rem;
+  transform: translateY(-50%);
+}
+
+.bayan-input {
+  width: 0;
+  height: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.bayan-text {
+
+  transition: all 2s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+
+
+  padding: 0.6rem 0.9rem;
+  font-size: 1.8rem;
+  color: rgb(103, 206, 25);
+  max-width: 40%;
+  margin: 0 auto;
+}
+
+.bayan-item:hover .bayan-text,
+.bayan-input:checked~.bayan-text {
+
+
+  opacity: 1;
+  height: auto;
+}
+
+
+p {
+  font-weight: bold;
+  transform: translate(0.75rem, 4rem);
+}
+
+img {
+  max-height: 60vh;
+  display: inline-block;
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .bayan-text {
+    font-size: 1.7rem;
+  }
+
+}
+
+@media screen and (max-width: 960px) {
+  .bayan-text {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media screen and (max-width: 860px) {
+  .bayan-text {
+    font-size: 1.3rem;
+  }
+
+  p {
+    transform: translate(0.75rem, 3rem);
+  }
+
+}
+
+@media screen and (max-width: 820px) {
+  .bayan-title {
+    font-size: 1.6rem;
+  }
+
+  .bayan-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .bayan-title {
+    font-size: 1.5rem;
+  }
+
+  p {
+    transform: translate(0.75rem, 3.1rem);
+  }
+
+  .bayan-text {
+    max-width: 80%;
+  }
+
+  p {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .bayan-title {
+    font-size: 1.25rem;
+  }
+
+  .bayan-text {
+    font-size: 1rem;
+
+  }
+
+  p {
+    width: 80%;
+  }
+}
